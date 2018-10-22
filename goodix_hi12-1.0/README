@@ -5,5 +5,6 @@
 #sudo dkms install -m goodix_hi12 -v 1.0
 # Blacklist original Goodix module
 #sudo echo "blacklist goodix" > /etc/modprobe.d/goodix_hi12.conf
+# Copy additional configuration files
 #sudo cp goodix_9111_cfg.bin /lib/firmware/
-#reboot
+# Reboot

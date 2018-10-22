@@ -1,0 +1,11 @@
+# Install dkms package
+# Add, build and install es8316 module
+#sudo dkms add -m es8316_hi12 -v 1.0
+#sudo dkms build -m es8316_hi12 -v 1.0
+#sudo dkms install -m es8316_hi12 -v 1.0
+# Blacklist original ES8316 module
+#sudo echo "blacklist snd_soc_es8316" > /etc/modprobe.d/es8316_hi12.conf
+# Copy additional configuration files
+#sudo cp -r bytcht-es8316 /usr/share/alsa/ucm/
+#sudo cp asound.conf /etc/asound.conf
+# Reboot
