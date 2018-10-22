@@ -1,0 +1,9 @@
+# Install dkms package
+# Add, build and install goodix module
+#sudo dkms add -m goodix_hi12 -v 1.0
+#sudo dkms build -m goodix_hi12 -v 1.0
+#sudo dkms install -m goodix_hi12 -v 1.0
+# Blacklist original Goodix module
+#sudo echo "blacklist goodix" > /etc/modprobe.d/goodix_hi12.conf
+#sudo cp goodix_9111_cfg.bin /lib/firmware/
+#reboot
